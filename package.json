@@ -1,0 +1,16 @@
+{
+  "name": "compare_tire_update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --output-style compressed --source-map true  scss/ --output css/",
+    "watch-scss": "node-sass --watch --output-style compressed --source-map true  scss/ --output css/"
+  },
+  "author": "Nicholay Kuropatkin",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^3.8.0"
+  }
+}

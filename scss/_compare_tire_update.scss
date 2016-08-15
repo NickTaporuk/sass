@@ -1,0 +1,11 @@
+#tcwlw_comparing_tire_wrapper {
+  border-collapse: collapse;
+
+  .tcwlw_border_left {
+    @include position('border-left');
+  }
+
+  .tcwlw_border_top {
+    @include position('border-top');
+  }
+}
