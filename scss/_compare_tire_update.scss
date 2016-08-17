@@ -1,11 +1,214 @@
 #tcwlw_comparing_tire_wrapper {
   border-collapse: collapse;
-
-  .tcwlw_border_left {
-    @include position('border-left');
+  width: 100%;
+  .tcwlw_text_align_center {
+    text-align: center;
+  }
+  .tcwlw_text_align_right {
+    text-align: right;
+  }
+  .tcwlw_compare_tire_indent_right {
+    margin-right: 0.2em;
+    padding: 0.2em;
   }
 
+  .tcwlw_compare_tire_indent {
+    margin: 0 0.2em;
+    padding: 0.2em;
+  }
+  .tcwlw_compare_tire_left_sidebar {
+    color: $fontColorCompareTireLeftSidebar;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial;
+  }
+  .tcwlw_border_left {
+    border-left: 2px solid $colorBorderComparingTable;
+  }
   .tcwlw_border_top {
-    @include position('border-top');
+    border-top: 2px solid $colorBorderComparingTable;
+  }
+  .tcwlw_border_right {
+    border-right: 2px solid $colorBorderComparingTable;
+  }
+  .tcwlw_border_bottom {
+    border-bottom: 2px solid $colorBorderComparingTable;
+  }
+  .tcwlw_position_relative {
+    position: relative;
+  }
+  .tcwlw_position_absolute {
+    position: absolute;
+  }
+  .tcwlw_compare_tire_row_margin {
+    margin: 0 0.4em;
+  }
+  .tcwlw_row_model_tire {
+    color: $red;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial;
+    position: relative;
+
+    .tcwlw_text_align_center {
+      padding-top: 0.7em;
+    }
+  }
+
+  #tcwlw_row_equipment_tire {
+    .tcwlw_equipment_tire {
+      text-align: center;
+      background-color: $orangeCompareTireBlock;
+      color: $white;
+      font-size: 14px;
+      font-family:Arial;
+      font-weight: bold;
+      padding: 0.3em 0
+    }
+  }
+  #tcwlw_row_warranty_tire {
+    font-family:Arial;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  #tcwlw_row_category_tire {
+    font-family:Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: $grayDark;
+    padding-top: 0.5em;
+    height: 3em;
+    vertical-align: top;
+  }
+  .tcwlw_comparing_tire_images {
+    .tcwlw_compare_item_wrapper {
+      border: 1px solid $colorBorderComparingTable;
+      //max-width: 11em;
+      //margin: auto;
+
+      .tcwlw_compare_item_close {
+        //position: absolute;
+        float: right;
+        top: 0.1em;
+        left: 86%;
+        color: $closeCompareTireBlock;
+        cursor: pointer;
+      }
+    }
+  }
+  .tcwlw_messages_wrapper_tire {
+    background-color: $green;
+    color: $white;
+    font-weight: 600;
+    padding: 0.5em 0.3em;
+    font-size: 15px;
+    font-family: Arial;
+  }
+  #tcwlw_comparing_tire_rating_wrapper {
+    text-align: center;
+
+    .tcwlw_comare_tire_stars_wrapper {
+      color: $yellowCompareTireStars;
+      padding: 0.5em 0.2em 0;
+    }
+    .tcwlw_comare_tire_reviewes {
+      color: $red;
+      padding-bottom: 0.5em;
+    }
+  }
+  #tcwlw_comare_tire_price_wrapper {
+    .tcwlw_comare_tire_price_info {
+      border: 1px solid $colorBorderComparingTable;
+      font-family: Arial;
+      padding-left: 0.3em;
+        .tcwlw_comare_tire_price {
+          color: $grayDark;
+          font-size: 13px;
+          font-weight: 600;
+          padding: 0.3em ;
+        }
+
+        .tcwlw_comare_tire_total {
+          color: $red;
+          font-size: 16px;
+          padding: 0.3em ;
+        }
+    }
+  }
+  tr {
+    .tcwlw_table_tr_even {
+      background-color:$backgroundCompareTirePositiveBlock;
+    }
+    td {
+      img {
+        max-width: 90px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    td.tcwlw_compare_tire_logo img {
+        max-width: 120px;
+        padding-top: 0.6em;
+    }
+  }
+  .tcwlw_select_btn_wrapper {
+    vertical-align: middle;
+    padding: 0.5em 0;
+
+    .tcwlw_brand_btn {
+      background-color: #c00;
+      background-image: -moz-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.15)), color-stop(100%, rgba(0,0,0,0.15)));
+      background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%);
+      background-image: -o-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%);
+      background-image: -ms-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%);
+      background-image: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%);
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: 2em;
+      font-weight: 700;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-indent: -0.05em;
+      color: white;
+      text-decoration: none;
+      -webkit-appearance: none;
+      text-shadow: none;
+      height: auto;
+      margin-bottom: .4em;
+      padding: 1em 1.5em 1em 1.5em;
+      border: none;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      -webkit-box-shadow: 0 6px 1px -3px rgba(0,0,0,0.15);
+      -moz-box-shadow: 0 6px 1px -3px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 1px -3px rgba(0,0,0,0.15);
+      text-align: center;
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+    }
+
+    .tcwlw_select_btn {
+      font-size : 1em;
+      float : none;
+      white-space : nowrap;
+      margin : 0;
+      padding : 0.6em 1.1em;;
+      color : #ffffff;
+      text-decoration : none;
+
+      i {
+        font-size: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
   }
 }

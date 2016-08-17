@@ -1,3 +1,0 @@
-@mixin position($position,$color:'#cccccc',$line:'1px',$type:'solid') {
-  $position: $line $type $color;
-}
