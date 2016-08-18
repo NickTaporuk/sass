@@ -109,10 +109,16 @@
     .tcwlw_comare_tire_stars_wrapper {
       color: $yellowCompareTireStars;
       padding: 0.5em 0.2em 0;
+      text-align: center;
+
+      i {
+        font-size: 21px;
+      }
     }
     .tcwlw_comare_tire_reviewes {
       color: $red;
       padding-bottom: 0.5em;
+      text-align: center;
     }
   }
   #tcwlw_comare_tire_price_wrapper {
@@ -134,11 +140,25 @@
         }
     }
   }
+  #tcwlw_comparing_tire_button_wrapper {
+    .tcwlw_select_btn_wrapper {
+      .tcwlw_select_btn.tcwlw_select_btn {
+        float: none;
+        width: 78%;
+      }
+    }
+  }
+
   tr {
     .tcwlw_table_tr_even {
       background-color:$backgroundCompareTirePositiveBlock;
     }
     td {
+      padding: 0.2em;
+
+      &:nth-child(even) {
+        background: none;
+      }
       img {
         max-width: 90px;
         display: block;
